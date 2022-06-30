@@ -13,6 +13,7 @@ def	binary_search(array, target, start, end) :
 	else :
 		return binary_search(array, target, start, mid - 1)
 
+
 array = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
 target = int(input())
 index = binary_search(array, target, 0, len(array) - 1)
