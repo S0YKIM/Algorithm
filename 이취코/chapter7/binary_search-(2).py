@@ -9,7 +9,7 @@ def	binary_search(array, target, start, end) :
 	# 타겟보다 인덱스가 작은 경우, 오른쪽 탐색
 	elif array[mid] < target :
 		return binary_search(array, target, mid + 1, end)
-	# 타겟보다 인덱스가 큰 경우, 인덱스 오른쪽을 전부 버림
+	# 타겟보다 인덱스가 큰 경우, 인덱스 왼쪽을 탐색
 	else :
 		return binary_search(array, target, start, mid - 1)
 
