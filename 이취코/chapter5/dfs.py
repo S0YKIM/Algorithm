@@ -6,7 +6,7 @@ def	dfs(graph, visited, v) :
 	visited[v] = True
 	print(v, end=' ')
 	for i in graph[v] :
-		if visited[i] == False :
+		if not visited[i] :
 			dfs(graph, visited, i)
 
 # 주어진 그래프
