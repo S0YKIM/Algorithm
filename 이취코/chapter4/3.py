@@ -66,16 +66,16 @@ turn_count = 0
 # 종료 플래그(False 면 종료)
 flag = True
 while flag :
+	turn_left(pos)
 	if move(pos, tiles, size) :
 		move_count += 1
 		turn_count = 0
-		print(pos)
+		# print(pos)
 	else :
-		turn_left(pos)
 		turn_count += 1
-		print(pos)
+		# print(pos)
 	if turn_count == 4 :
 		flag = move_back(pos, tiles)
 		turn_count = 0
-		print(pos)
+		# print(pos)
 print(move_count)
