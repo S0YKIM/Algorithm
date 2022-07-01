@@ -1,7 +1,7 @@
 from collections import Counter
 
 def solution(participant, completion):
-    count = dict(Counter(completion))
+    count = Counter(completion)
     for i in participant :
         if i not in count :
             return i
