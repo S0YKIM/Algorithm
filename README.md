@@ -23,3 +23,7 @@
 
 ### 🏁Chapter 7
 - Binary Search
+
+### 🏁Chapter 8
+- Dynamic Programming
+- Memoization
