@@ -20,3 +20,8 @@ counter = Counter(array)
 print(counter['blue'])
 print(counter)
 print(dict(counter)) # 딕셔너리형으로 변환
+
+# 아래는 라이브러리 가져오기 없이 순수 딕셔너리로 같은 결과를 만든다
+# di = dict()
+# for i in array :
+# 	di[i] = di.get(i, 0) + 1
