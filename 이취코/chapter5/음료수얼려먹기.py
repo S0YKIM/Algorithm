@@ -25,9 +25,7 @@ def	solution(N, M, array) :
 	answer = 0
 	tray = list()
 	for i in range(N) :
-		tray.append(list())
-		for j in range(M) :
-			tray[i].append(array[i][j])
+		tray.append(array[i])
 	for i in range(N) :
 		for j in range(M) :
 			if dfs(N, M, tray, i, j) :
