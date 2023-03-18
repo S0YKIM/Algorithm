@@ -10,8 +10,8 @@ int solution(vector<int> common) {
   int sub = common[1] - common[0];
   int div = common[1] / common[0];
   if (common[2] - common[1] == sub)
-    answer = common[size - 1] + sub;
+    answer = common.back() + sub;
   else
-    answer = common[size - 1] * div;
+    answer = common.back() * div;
   return answer;
 }
